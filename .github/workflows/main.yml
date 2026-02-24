@@ -10,12 +10,9 @@ jobs:
       name: "Terraform Apply"
       runs-on: 'ubuntu-latest"
       steps:
-      - name: "Configure AWS Credentials" Action for GitHub Actions
-  # You may pin to the exact commit or the version.
-  # uses: aws-actions/configure-aws-credentials@8df5847569e6427dd6c4fb1cf565c83acfa8afa7
-    uses: aws-actions/configure-aws-credentials@v6.0.0
-    with:
-      # AWS Region, e.g. us-east-2
-      aws-region: us-east-1
-      aws-access-key-id: ${{secret.AWS_ACCESS_KEY_ID}}
-      aws-secret-access-key: ${{secret.AWS_SECRET_ACCESS_KEY}}
+            - name: "Configure AWS Credentials"
+                  uses: aws-actions/configure-aws-credentials@v4
+                  with:
+                    aws-region: us-east-1
+                    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
