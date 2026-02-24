@@ -5,7 +5,7 @@ Desafio Técnico: Implementação de um Cluster Kubernetes com Terraform e Autom
 O objetivo deste desafio é criar um projeto para provisionar um cluster Kubernetes na AWS usando o Amazon EKS (Elastic Kubernetes Service) de forma automatizada. Após a criação do cluster, você deverá configurar uma pipeline usando GitHub Actions que automatize o processo de criação e manutenção desse cluster Kubernetes.
 Com o objetivo de suportar a escala de diversos microsserviços da Mr. Fusion Solutions.
 
-###Etapas do projeto
+### Etapas do projeto
 Criação do Cluster Kubernetes:
 
 Utilize Terraform para criar um cluster Kubernetes usando Amazon EKS.
